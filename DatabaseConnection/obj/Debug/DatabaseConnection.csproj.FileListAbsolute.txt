@@ -1,0 +1,10 @@
+E:\C# Project\Destination\DatabaseConnection\bin\Debug\DatabaseConnection.dll
+E:\C# Project\Destination\DatabaseConnection\bin\Debug\DatabaseConnection.pdb
+E:\C# Project\Destination\DatabaseConnection\obj\Debug\DatabaseConnection.csprojResolveAssemblyReference.cache
+E:\C# Project\Destination\DatabaseConnection\obj\Debug\DatabaseConnection.dll
+E:\C# Project\Destination\DatabaseConnection\obj\Debug\DatabaseConnection.pdb
+E:\C# Project\DestinationFinalVersion\Destination\DatabaseConnection\bin\Debug\DatabaseConnection.dll
+E:\C# Project\DestinationFinalVersion\Destination\DatabaseConnection\bin\Debug\DatabaseConnection.pdb
+E:\C# Project\DestinationFinalVersion\Destination\DatabaseConnection\obj\Debug\DatabaseConnection.csprojResolveAssemblyReference.cache
+E:\C# Project\DestinationFinalVersion\Destination\DatabaseConnection\obj\Debug\DatabaseConnection.dll
+E:\C# Project\DestinationFinalVersion\Destination\DatabaseConnection\obj\Debug\DatabaseConnection.pdb

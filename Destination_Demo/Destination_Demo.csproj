@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22647911-8A8E-47DA-93F9-B5A733C6DF49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Destination_Demo</RootNamespace>
+    <AssemblyName>Destination_Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashBoard.Designer.cs">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminNewOrder.Designer.cs">
+      <DependentUpon>AdminNewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrderStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOrderStatus.Designer.cs">
+      <DependentUpon>AdminOrderStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign Delivery Boycs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign Delivery Boycs.Designer.cs">
+      <DependentUpon>Assign Delivery Boycs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBList.Designer.cs">
+      <DependentUpon>DBList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details.Designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDeliveryBoyRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDeliveryBoyRequest.Designer.cs">
+      <DependentUpon>NewDeliveryBoyRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ConfirmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ConfirmOrder.Designer.cs">
+      <DependentUpon>ConfirmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DeliverDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DeliverDashboard.Designer.cs">
+      <DependentUpon>DeliverDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\MemberDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\MemberDashBoard.Designer.cs">
+      <DependentUpon>MemberDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Order.cs" />
+    <Compile Include="Presentation\OrderDetailsRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\OrderDetailsRequest.Designer.cs">
+      <DependentUpon>OrderDetailsRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\OrderHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\OrderHistoryForm.Designer.cs">
+      <DependentUpon>OrderHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PlaceOrder1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PlaceOrder1.Designer.cs">
+      <DependentUpon>PlaceOrder1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PlaceOrder2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PlaceOrder2.Designer.cs">
+      <DependentUpon>PlaceOrder2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PlaceOrder3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PlaceOrder3.Designer.cs">
+      <DependentUpon>PlaceOrder3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SignUpDeliveryBoy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SignUpDeliveryBoy.Designer.cs">
+      <DependentUpon>SignUpDeliveryBoy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SignUpUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SignUpUser.Designer.cs">
+      <DependentUpon>SignUpUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\User.cs" />
+    <Compile Include="Presentation\WelcomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\WelcomePage.Designer.cs">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm.Designer.cs">
+      <DependentUpon>RequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllUser.Designer.cs">
+      <DependentUpon>ViewAllUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminDashBoard.resx">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminNewOrder.resx">
+      <DependentUpon>AdminNewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOrderStatus.resx">
+      <DependentUpon>AdminOrderStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign Delivery Boycs.resx">
+      <DependentUpon>Assign Delivery Boycs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBList.resx">
+      <DependentUpon>DBList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDeliveryBoyRequest.resx">
+      <DependentUpon>NewDeliveryBoyRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ConfirmOrder.resx">
+      <DependentUpon>ConfirmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DeliverDashboard.resx">
+      <DependentUpon>DeliverDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\MemberDashBoard.resx">
+      <DependentUpon>MemberDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\OrderDetailsRequest.resx">
+      <DependentUpon>OrderDetailsRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\OrderHistoryForm.resx">
+      <DependentUpon>OrderHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PlaceOrder1.resx">
+      <DependentUpon>PlaceOrder1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PlaceOrder2.resx">
+      <DependentUpon>PlaceOrder2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PlaceOrder3.resx">
+      <DependentUpon>PlaceOrder3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SignUpDeliveryBoy.resx">
+      <DependentUpon>SignUpDeliveryBoy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SignUpUser.resx">
+      <DependentUpon>SignUpUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\WelcomePage.resx">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RequestForm.resx">
+      <DependentUpon>RequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllUser.resx">
+      <DependentUpon>ViewAllUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\MainLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\img_268929.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\6478-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\6d79a9a0f7baac6f913a6306b3246240.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\f2db5b1fae65676bfd1ecae1dbfdc3a2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\4-47145_save-button-svg-clip-arts-600-x-230-px-save-button-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart47145.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\goback2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\notification-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\history_318-48462.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseConnection\DatabaseConnection.csproj">
+      <Project>{e3adaecd-99cd-444c-a57b-eec302e74a4c}</Project>
+      <Name>DatabaseConnection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
